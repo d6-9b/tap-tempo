@@ -1,21 +1,40 @@
 function MainPanel () {
 
+    function restartTick () {
+        clearTimeout(tickTimeout)
+        tick()
+    }
+
     function tick () {
         blink.tick()
         tickTimeout = setTimeout(tick, averageInterval)
+    }
+
+    function updateBpm () {
+        bpmField.setValue(60000 / averageInterval)
+    }
+
+    function updateInterval () {
+        intervalField.setValue(averageInterval)
     }
 
     var classPrefix = 'MainPanel'
 
     var averageInterval = 500
 
-    var bpmField = Field('BPM')
+    var bpmField = Field('BPM', function (bpm) {
+        averageInterval = 60000 / bpm
+        updateInterval()
+    })
     bpmField.addClass(classPrefix + '-bpmField')
-    bpmField.setValue(60000 / averageInterval)
 
-    var intervalField = Field('MS')
+    var intervalField = Field('MS', function (interval) {
+        averageInterval = interval
+        updateBpm()
+        restartTick()
+    })
     intervalField.addClass(classPrefix + '-intervalField')
-    intervalField.setValue(averageInterval)
+    updateInterval()
 
     var blink = Blink()
 
@@ -34,11 +53,10 @@ function MainPanel () {
                 return a + b
             })
             averageInterval = sum / intervals.length
-            intervalField.setValue(averageInterval)
-            bpmField.setValue(60000 / averageInterval)
 
-            clearTimeout(tickTimeout)
-            tick()
+            updateBpm()
+            updateInterval()
+            restartTick()
 
             clearTimeout(resetTimeout)
             resetTimeout = setTimeout(function () {
@@ -56,6 +74,7 @@ function MainPanel () {
     element.appendChild(blink.element)
     element.appendChild(tapButton.element)
 
+    updateBpm()
     tick()
 
     return { element: element }
