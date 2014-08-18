@@ -4,11 +4,14 @@ function Blink () {
 
     var classList = element.classList
 
+    var timeout
+
     return {
         element: element,
         tick: function () {
             classList.add('light')
-            setTimeout(function () {
+            clearTimeout(timeout)
+            timeout = setTimeout(function () {
                 classList.remove('light')
             }, 100)
         },
