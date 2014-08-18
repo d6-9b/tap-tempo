@@ -3,7 +3,7 @@ function MainPanel (playPulse) {
     function tick () {
         blink.tick()
         tickTimeout = setTimeout(tick, averageInterval)
-        if (!muteButton.isMuted()) playPulse()
+        if (!muteButton.muted) playPulse()
     }
 
     function updateBpm () {

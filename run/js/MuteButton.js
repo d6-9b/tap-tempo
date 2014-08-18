@@ -1,8 +1,8 @@
 function MuteButton () {
 
     function press () {
-        muted = !muted
-        if (muted) textNode.nodeValue = 'UNMUTE'
+        that.muted = !that.muted
+        if (that.muted) textNode.nodeValue = 'UNMUTE'
         else textNode.nodeValue = 'MUTE'
         classList.add('active')
     }
@@ -10,8 +10,6 @@ function MuteButton () {
     function release () {
         classList.remove('active')
     }
-
-    var muted = false
 
     var textNode = TextNode('MUTE')
 
@@ -58,11 +56,11 @@ function MuteButton () {
     var touched = false,
         identifier = null
 
-    return {
+    var that = {
         element: element,
-        isMuted: function () {
-            return muted
-        },
+        muted: false,
     }
+
+    return that
 
 }
