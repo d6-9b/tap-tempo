@@ -1,12 +1,12 @@
 function Field (label, changeListener) {
 
-    function beginPointer (e) {
-        pointer = e
+    function beginPointer (_pointer) {
+        pointer = _pointer
         classList.add('active')
         interval = setInterval(repeatChange, 50)
     }
 
-    function endPointer (e) {
+    function endPointer () {
         clearInterval(interval)
         classList.remove('active')
     }
@@ -32,13 +32,13 @@ function Field (label, changeListener) {
     var labelElement = Div(classPrefix + '-label')
     labelElement.appendChild(TextNode(label + ':'))
 
-    var precisionNode = TextNode('0')
+    var precisionNode = TextNode('')
 
     var precisionElement = Div(classPrefix + '-precision')
     precisionElement.appendChild(TextNode('.'))
     precisionElement.appendChild(precisionNode)
 
-    var valueNode = TextNode('0')
+    var valueNode = TextNode('')
 
     var leftArrowElement = Div(classPrefix + '-leftArrow')
     leftArrowElement.appendChild(TextNode('\u25c0'))
@@ -109,11 +109,9 @@ function Field (label, changeListener) {
 
     var classList = valueElement.classList
 
-    var value
-    var touched = false
-    var identifier = null
-    var pointer
-    var interval
+    var value, pointer, interval,
+        touched = false,
+        identifier = null
 
     return {
         element: element,
