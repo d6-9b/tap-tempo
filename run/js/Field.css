@@ -24,18 +24,18 @@
 .Field-rightArrow {
     position: absolute;
     top: 0;
-    font-size: 18px;
+    font-size: 30px;
     padding: 0 4px;
-    opacity: 0;
+    color: #444;
 }
 .active > .Field-leftArrow,
 .active > .Field-rightArrow {
-    opacity: 1;
+    color: #fff;
 }
 
 .Field-leftArrow {
     left: 20px;
-    transition: ease-in-out 0.2s opacity, ease-in-out 0.2s left;
+    transition: ease-in-out 0.2s color, ease-in-out 0.2s left;
 }
 .active > .Field-leftArrow {
     left: 0;
@@ -43,7 +43,7 @@
 
 .Field-rightArrow {
     right: 20px;
-    transition: ease-in-out 0.2s opacity, ease-in-out 0.2s right;
+    transition: ease-in-out 0.2s color, ease-in-out 0.2s right;
 }
 .active > .Field-rightArrow {
     right: 0;
