@@ -21,7 +21,7 @@ function MainPanel () {
 
     var lastTime = null
     var intervals = []
-    var tickTimeout
+    var tickTimeout, resetTimeout
 
     var tapButton = TapButton(function () {
         var now = Date.now()
@@ -39,6 +39,12 @@ function MainPanel () {
 
             clearTimeout(tickTimeout)
             tick()
+
+            clearTimeout(resetTimeout)
+            resetTimeout = setTimeout(function () {
+                lastTime = null
+                intervals.splice(0)
+            }, 4 * averageInterval)
 
         }
         lastTime = now
