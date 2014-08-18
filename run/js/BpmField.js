@@ -16,6 +16,9 @@ function BpmField () {
 
     return {
         element: element,
+        setValue: function (value) {
+            valueNode.nodeValue = value
+        },
     }
 
 }

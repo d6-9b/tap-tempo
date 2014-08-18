@@ -16,6 +16,9 @@ function IntervalField () {
 
     return {
         element: element,
+        setValue: function (value) {
+            valueNode.nodeValue = value + 'ms'
+        },
     }
 
 }
