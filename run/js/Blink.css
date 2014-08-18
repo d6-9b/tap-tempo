@@ -1,8 +1,9 @@
 .Blink {
-    width: 15px;
-    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
     margin: auto;
-    margin-top: 15px;
     background: #444;
     border-radius: 50%;
 }

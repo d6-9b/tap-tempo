@@ -65,10 +65,16 @@ function MainPanel (playPulse) {
         lastTime = now
     })
 
+    var muteButton = MuteButton()
+
+    var buttonsElement = Div(classPrefix + '-buttons')
+    buttonsElement.appendChild(blink.element)
+    buttonsElement.appendChild(muteButton.element)
+
     var element = Div(classPrefix)
     element.appendChild(bpmField.element)
     element.appendChild(intervalField.element)
-    element.appendChild(blink.element)
+    element.appendChild(buttonsElement)
     element.appendChild(tapButton.element)
 
     updateBpm()

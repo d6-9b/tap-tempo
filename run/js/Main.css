@@ -10,7 +10,7 @@
 }
 
 html, body {
-    font: normal 15px/20px Arial, sans-serif;
+    font: normal 15px/20px monospace;
     background: #000;
     color: #fff;
 }

@@ -7,7 +7,6 @@
     width: 320px;
     height: 480px;
     margin: auto;
-    font-family: monospace;
 }
 
 .MainPanel-intervalLabel {
@@ -26,4 +25,9 @@
 
 .MainPanel-intervalField {
     margin-top: 10px;
+}
+
+.MainPanel-buttons {
+    margin-top: 15px;
+    text-align: center;
 }
