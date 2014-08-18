@@ -1,6 +1,9 @@
 function MuteButton () {
 
     function press () {
+        muted = !muted
+        if (muted) textNode.nodeValue = 'UNMUTE'
+        else textNode.nodeValue = 'MUTE'
         classList.add('active')
     }
 
@@ -8,8 +11,12 @@ function MuteButton () {
         classList.remove('active')
     }
 
+    var muted = false
+
+    var textNode = TextNode('MUTE')
+
     var element = Div('MuteButton')
-    element.appendChild(TextNode('MUTE'))
+    element.appendChild(textNode)
     element.addEventListener('mousedown', function (e) {
 
         function mouseUp (e) {
@@ -53,6 +60,9 @@ function MuteButton () {
 
     return {
         element: element,
+        isMuted: function () {
+            return muted
+        },
     }
 
 }
