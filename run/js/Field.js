@@ -58,10 +58,12 @@ function Field (label, changeListener) {
     element.addEventListener('mousedown', function (e) {
 
         function mouseMove (e) {
+            e.preventDefault()
             pointer = e
         }
 
-        function mouseUp () {
+        function mouseUp (e) {
+            e.preventDefault()
             endPointer()
             removeEventListener('mousemove', mouseMove)
             removeEventListener('mouseup', mouseUp)
