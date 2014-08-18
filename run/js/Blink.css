@@ -1,0 +1,12 @@
+.Blink {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    margin-top: 15px;
+    background: #444;
+    border-radius: 50%;
+}
+.Blink.light {
+    background: #f00;
+    box-shadow: 1px 0px 10px #f00, 1px 0px 20px #f00, 1px 0px 30px #f00;
+}
