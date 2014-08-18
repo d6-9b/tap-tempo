@@ -1,5 +1,16 @@
 function Field (label, changeListener) {
 
+    function beginPointer (e) {
+        pointer = e
+        classList.add('active')
+        interval = setInterval(repeatChange, 50)
+    }
+
+    function endPointer (e) {
+        clearInterval(interval)
+        classList.remove('active')
+    }
+
     function repeatChange () {
         var rect = valueElement.getBoundingClientRect(),
             width = valueElement.offsetWidth,
@@ -44,16 +55,37 @@ function Field (label, changeListener) {
     var element = Div(classPrefix)
     element.appendChild(labelElement)
     element.appendChild(valueElement)
+    element.addEventListener('mousedown', function (e) {
+
+        function mouseMove (e) {
+            pointer = e
+        }
+
+        function mouseUp () {
+            endPointer()
+            removeEventListener('mousemove', mouseMove)
+            removeEventListener('mouseup', mouseUp)
+        }
+
+        e.preventDefault()
+        if (touched) touched = false
+        else {
+            addEventListener('mousemove', mouseMove)
+            addEventListener('mouseup', mouseUp)
+            beginPointer(e)
+        }
+
+    })
     element.addEventListener('touchstart', function (e) {
         e.preventDefault()
+        touched = true
         var touch = e.changedTouches[0]
         identifier = touch.identifier
-        classList.add('active')
-        pointer = touch
-        interval = setInterval(repeatChange, 50)
+        beginPointer(touch)
     })
     element.addEventListener('touchmove', function (e) {
         e.preventDefault()
+        touched = true
         var touches = e.changedTouches
         for (var i = 0; i < touches.length; i++) {
             var touch = touches[i]
@@ -65,12 +97,12 @@ function Field (label, changeListener) {
     })
     element.addEventListener('touchend', function (e) {
         e.preventDefault()
+        touched = true
         var touches = e.changedTouches
         for (var i = 0; i < touches.length; i++) {
             if (touches[i].identifier === identifier) {
                 identifier = null
-                clearInterval(interval)
-                classList.remove('active')
+                endPointer()
             }
         }
     })
@@ -78,6 +110,7 @@ function Field (label, changeListener) {
     var classList = valueElement.classList
 
     var value
+    var touched = false
     var identifier = null
     var pointer
     var interval
