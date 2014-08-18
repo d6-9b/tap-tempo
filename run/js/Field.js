@@ -20,9 +20,17 @@ function Field (label, changeListener) {
 
     var valueNode = TextNode('0')
 
+    var leftArrowElement = Div(classPrefix + '-leftArrow')
+    leftArrowElement.appendChild(TextNode('\u25c0'))
+
+    var rightArrowElement = Div(classPrefix + '-rightArrow')
+    rightArrowElement.appendChild(TextNode('\u25b6'))
+
     var valueElement = Div(classPrefix + '-value')
     valueElement.appendChild(valueNode)
     valueElement.appendChild(precisionElement)
+    valueElement.appendChild(leftArrowElement)
+    valueElement.appendChild(rightArrowElement)
 
     var element = Div(classPrefix)
     element.appendChild(labelElement)
@@ -32,6 +40,7 @@ function Field (label, changeListener) {
         var touch = e.changedTouches[0]
         identifier = touch.identifier
         oldX = touch.clientX
+        classList.add('active')
     })
     element.addEventListener('touchmove', function (e) {
         e.preventDefault()
@@ -53,9 +62,12 @@ function Field (label, changeListener) {
         for (var i = 0; i < touches.length; i++) {
             if (touches[i].identifier === identifier) {
                 identifier = null
+                classList.remove('active')
             }
         }
     })
+
+    var classList = valueElement.classList
 
     var value
     var identifier = null

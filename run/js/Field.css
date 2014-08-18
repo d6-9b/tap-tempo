@@ -12,9 +12,39 @@
     font-size: 40px;
     line-height: 50px;
     color: #fff;
+    position: relative;
 }
 
 .Field-precision {
     display: inline;
     font-size: 20px;
+}
+
+.Field-leftArrow,
+.Field-rightArrow {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    padding: 0 4px;
+    opacity: 0;
+}
+.active > .Field-leftArrow,
+.active > .Field-rightArrow {
+    opacity: 1;
+}
+
+.Field-leftArrow {
+    left: 20px;
+    transition: ease-in-out 0.2s opacity, ease-in-out 0.2s left;
+}
+.active > .Field-leftArrow {
+    left: 0;
+}
+
+.Field-rightArrow {
+    right: 20px;
+    transition: ease-in-out 0.2s opacity, ease-in-out 0.2s right;
+}
+.active > .Field-rightArrow {
+    right: 0;
 }
