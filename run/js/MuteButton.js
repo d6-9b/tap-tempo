@@ -1,9 +1,14 @@
 function MuteButton () {
 
-    function press () {
-        that.muted = !that.muted
+    function updateText () {
         if (that.muted) textNode.nodeValue = 'UNMUTE'
         else textNode.nodeValue = 'MUTE'
+    }
+
+    function press () {
+        that.muted = !that.muted
+        localStorage.muted = JSON.stringify(that.muted)
+        updateText()
         classList.add('active')
     }
 
@@ -11,7 +16,7 @@ function MuteButton () {
         classList.remove('active')
     }
 
-    var textNode = TextNode('MUTE')
+    var textNode = TextNode('')
 
     var element = Div('MuteButton')
     element.appendChild(textNode)
@@ -58,8 +63,16 @@ function MuteButton () {
 
     var that = {
         element: element,
-        muted: false,
+        muted: (function () {
+            try {
+                return JSON.parse(localStorage.muted)
+            } catch (e) {
+                return false
+            }
+        })(),
     }
+
+    updateText()
 
     return that
 
