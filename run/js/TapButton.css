@@ -1,6 +1,6 @@
 .TapButton {
     margin: auto;
-    margin-top: 25px;
+    margin-top: 30px;
     width: 160px;
     height: 160px;
     line-height: 160px;
@@ -11,5 +11,4 @@
 }
 .TapButton.active {
     background: #999;
-    box-shadow: 0 0 50px #999;
 }
