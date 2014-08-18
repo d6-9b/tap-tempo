@@ -1,8 +1,9 @@
-function MainPanel () {
+function MainPanel (playPulse) {
 
     function tick () {
         blink.tick()
         tickTimeout = setTimeout(tick, averageInterval)
+        playPulse()
     }
 
     function updateBpm () {
