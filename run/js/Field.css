@@ -38,7 +38,7 @@
     transition: ease-in-out 0.2s color, ease-in-out 0.2s left;
 }
 .active > .Field-leftArrow {
-    left: 0;
+    left: 10px;
 }
 
 .Field-rightArrow {
@@ -46,5 +46,5 @@
     transition: ease-in-out 0.2s color, ease-in-out 0.2s right;
 }
 .active > .Field-rightArrow {
-    right: 0;
+    right: 10px;
 }
