@@ -1,10 +1,5 @@
 function MainPanel () {
 
-    function restartTick () {
-        clearTimeout(tickTimeout)
-        tick()
-    }
-
     function tick () {
         blink.tick()
         tickTimeout = setTimeout(tick, averageInterval)
@@ -31,7 +26,6 @@ function MainPanel () {
     var intervalField = Field('MS', function (interval) {
         averageInterval = interval
         updateBpm()
-        restartTick()
     })
     intervalField.addClass(classPrefix + '-intervalField')
     updateInterval()
@@ -56,7 +50,9 @@ function MainPanel () {
 
             updateBpm()
             updateInterval()
-            restartTick()
+
+            clearTimeout(tickTimeout)
+            tick()
 
             clearTimeout(resetTimeout)
             resetTimeout = setTimeout(function () {
