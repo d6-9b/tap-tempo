@@ -56,14 +56,6 @@ function TapButton (tapListener) {
     var touched = false,
         identifier = null
 
-    return {
-        element: element,
-        tick: function () {
-            classList.add('light')
-            setTimeout(function () {
-                classList.remove('light')
-            }, 100)
-        },
-    }
+    return { element: element }
 
 }

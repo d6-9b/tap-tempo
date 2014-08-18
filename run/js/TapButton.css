@@ -7,15 +7,9 @@
     border-radius: 50%;
     text-align: center;
     background: #444;
-    color: #999;
     font-size: 42px;
-    border: 4px solid transparent;
 }
 .TapButton.active {
     background: #999;
-    color: #fff;
-}
-.TapButton.light {
-    border-color: #999;
     box-shadow: 0 0 50px #999;
 }

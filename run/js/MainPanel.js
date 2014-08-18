@@ -2,7 +2,6 @@ function MainPanel () {
 
     function tick () {
         blink.tick()
-        tapButton.tick()
         tickTimeout = setTimeout(tick, averageInterval)
     }
 
@@ -30,7 +29,7 @@ function MainPanel () {
 
             var interval = now - lastTime
             intervals.push(interval)
-            if (intervals.length > 8) intervals.shift()
+            if (intervals.length > 4) intervals.shift()
             var sum = intervals.reduce(function (a, b) {
                 return a + b
             })
@@ -45,7 +44,7 @@ function MainPanel () {
             resetTimeout = setTimeout(function () {
                 lastTime = null
                 intervals.splice(0)
-            }, 8 * averageInterval)
+            }, 4 * averageInterval)
 
         }
         lastTime = now
@@ -54,7 +53,7 @@ function MainPanel () {
     var element = Div(classPrefix)
     element.appendChild(bpmField.element)
     element.appendChild(intervalField.element)
-//    element.appendChild(blink.element)
+    element.appendChild(blink.element)
     element.appendChild(tapButton.element)
 
     tick()
