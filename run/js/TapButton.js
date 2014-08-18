@@ -1,6 +1,7 @@
-function TapButton () {
+function TapButton (tapListener) {
 
     function press () {
+        tapListener()
         classList.add('active')
     }
 
