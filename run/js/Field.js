@@ -1,5 +1,14 @@
 function Field (label, changeListener) {
 
+    function repeatChange () {
+        var rect = valueElement.getBoundingClientRect(),
+            width = valueElement.offsetWidth,
+            x = pointer.clientX - rect.left - width / 2
+        value += x * 0.001
+        updateValue()
+        changeListener(value)
+    }
+
     function updateValue () {
         valueNode.nodeValue = Math.floor(value)
         var precision = Math.floor((value % 1) * 100)
@@ -39,8 +48,9 @@ function Field (label, changeListener) {
         e.preventDefault()
         var touch = e.changedTouches[0]
         identifier = touch.identifier
-        oldX = touch.clientX
         classList.add('active')
+        pointer = touch
+        interval = setInterval(repeatChange, 50)
     })
     element.addEventListener('touchmove', function (e) {
         e.preventDefault()
@@ -48,11 +58,8 @@ function Field (label, changeListener) {
         for (var i = 0; i < touches.length; i++) {
             var touch = touches[i]
             if (touch.identifier === identifier) {
-                var newX = touch.clientX
-                value += (newX - oldX) * 0.01
-                oldX = newX
-                updateValue()
-                changeListener(value)
+                pointer = touch
+                break
             }
         }
     })
@@ -62,6 +69,7 @@ function Field (label, changeListener) {
         for (var i = 0; i < touches.length; i++) {
             if (touches[i].identifier === identifier) {
                 identifier = null
+                clearInterval(interval)
                 classList.remove('active')
             }
         }
@@ -71,7 +79,8 @@ function Field (label, changeListener) {
 
     var value
     var identifier = null
-    var oldX
+    var pointer
+    var interval
 
     return {
         element: element,
