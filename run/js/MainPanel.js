@@ -2,8 +2,14 @@ function MainPanel () {
 
     var classPrefix = 'MainPanel'
 
+    var bpmLabelElement = Div(classPrefix + '-bpmLabel')
+    bpmLabelElement.appendChild(TextNode('BPM:'))
+
+    var intervalLabelElement = Div(classPrefix + '-intervalLabel')
+    intervalLabelElement.appendChild(TextNode('INTERVAL:'))
+
     var tapElement = Div(classPrefix + '-tap')
-    tapElement.appendChild(document.createTextNode('TAP'))
+    tapElement.appendChild(TextNode('TAP'))
     tapElement.addEventListener('touchstart', function (e) {
         if (identifier !== null) return
         var touch = e.changedTouches[0]
@@ -24,6 +30,8 @@ function MainPanel () {
     var identifier = null
 
     var element = Div(classPrefix)
+    element.appendChild(bpmLabelElement)
+    element.appendChild(intervalLabelElement)
     element.appendChild(tapElement)
 
     return { element: element }

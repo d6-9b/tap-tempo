@@ -14,6 +14,7 @@ echo '<!DOCTYPE html>'
         .'<body>'
             .'<script type="text/javascript" src="js/Div.js"></script>'
             .'<script type="text/javascript" src="js/MainPanel.js"></script>'
+            .'<script type="text/javascript" src="js/TextNode.js"></script>'
             .'<script type="text/javascript" src="js/Main.js"></script>'
         .'</body>'
     .'</html>';
