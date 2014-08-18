@@ -1,14 +1,20 @@
-.IntervalField {
-    margin-top: 10px;
+.Field {
     text-align: center;
 }
-.IntervalField-label {
+
+.Field-label {
     font-size: 18px;
     line-height: 25px;
     color: #999;
 }
-.IntervalField-value {
+
+.Field-value {
     font-size: 40px;
     line-height: 50px;
     color: #fff;
+}
+
+.Field-precision {
+    display: inline;
+    font-size: 20px;
 }

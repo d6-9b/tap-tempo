@@ -8,5 +8,5 @@
 }
 .Blink.light {
     background: #f00;
-    box-shadow: 1px 0px 10px #f00, 1px 0px 20px #f00, 1px 0px 30px #f00;
+    box-shadow: 1px 0px 15px #f00, 1px 0px 30px #f00;
 }
