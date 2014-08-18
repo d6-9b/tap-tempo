@@ -1,6 +1,7 @@
 function MainPanel () {
 
     function tick () {
+        blink.tick()
         tapButton.tick()
         tickTimeout = setTimeout(tick, averageInterval)
     }
@@ -16,6 +17,8 @@ function MainPanel () {
     var intervalField = Field('MS')
     intervalField.addClass(classPrefix + '-intervalField')
     intervalField.setValue(averageInterval)
+
+    var blink = Blink()
 
     var lastTime = null
     var intervals = []
@@ -51,6 +54,7 @@ function MainPanel () {
     var element = Div(classPrefix)
     element.appendChild(bpmField.element)
     element.appendChild(intervalField.element)
+//    element.appendChild(blink.element)
     element.appendChild(tapButton.element)
 
     tick()
