@@ -1,4 +1,5 @@
 .Field {
+    position: absolute;
     text-align: center;
 }
 
@@ -10,7 +11,7 @@
 
 .Field-value {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 45px;
     color: #fff;
     position: relative;
 }

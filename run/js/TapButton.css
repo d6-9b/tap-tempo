@@ -1,9 +1,12 @@
 .TapButton {
+    position: absolute;
+    top: 260px;
+    right: 0;
+    left: 0;
     margin: auto;
-    margin-top: 20px;
-    width: 160px;
-    height: 160px;
-    line-height: 160px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
     border-radius: 50%;
     text-align: center;
     background: #444;

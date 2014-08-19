@@ -3,10 +3,10 @@
     vertical-align: top;
     height: 40px;
     line-height: 40px;
-    width: 100px;
+    width: 140px;
     margin-left: 20px;
     background: #444;
-    font-weight: bold;
+    font-size: 18px;
     border-radius: 20px;
 }
 .MuteButton.active {
