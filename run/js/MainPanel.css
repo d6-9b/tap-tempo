@@ -4,9 +4,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 320px;
-    height: 480px;
+    width: 0;
+    height: 0;
     margin: auto;
+}
+
+.MainPanel-center {
+    position: relative;
 }
 
 .MainPanel-buttons {
@@ -15,9 +19,11 @@
 
 @media (orientation:portrait) {
 
-    .MainPanel {
+    .MainPanel-center {
         width: 320px;
         height: 480px;
+        left: -160px;
+        top: -240px;
     }
 
     .MainPanel-bpmField {
@@ -42,9 +48,11 @@
 
 @media (orientation:landscape) {
 
-    .MainPanel {
+    .MainPanel-center {
         width: 480px;
         height: 320px;
+        left: -240px;
+        top: -160px;
     }
 
     .MainPanel-bpmField {

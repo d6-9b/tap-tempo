@@ -71,11 +71,14 @@ function MainPanel (playPulse) {
     buttonsElement.appendChild(blink.element)
     buttonsElement.appendChild(muteButton.element)
 
+    var centerElement = Div(classPrefix + '-center')
+    centerElement.appendChild(bpmField.element)
+    centerElement.appendChild(intervalField.element)
+    centerElement.appendChild(buttonsElement)
+    centerElement.appendChild(tapButton.element)
+
     var element = Div(classPrefix)
-    element.appendChild(bpmField.element)
-    element.appendChild(intervalField.element)
-    element.appendChild(buttonsElement)
-    element.appendChild(tapButton.element)
+    element.appendChild(centerElement)
 
     updateBpm()
     tick()
