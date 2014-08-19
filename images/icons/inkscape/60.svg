@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="32"
-   height="32"
+   width="60"
+   height="60"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="32.svg">
+   sodipodi:docname="60.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -174,10 +174,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1020.3622)">
+     transform="translate(0,-992.3622)">
     <g
        id="g3035"
-       transform="matrix(2,0,0,2,0,-1052.3622)">
+       transform="matrix(3.75,0,0,3.75,0,-2893.996)">
       <path
          transform="translate(0.5,1035.8622)"
          d="m 15.25,8.5 c 0,4.280207 -3.469793,7.75 -7.75,7.75 -4.2802068,0 -7.75,-3.469793 -7.75,-7.75 0,-4.2802068 3.4697932,-7.75 7.75,-7.75 4.280207,0 7.75,3.4697932 7.75,7.75 z"

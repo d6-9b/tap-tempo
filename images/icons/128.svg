@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="32"
-   height="32"
+   width="128"
+   height="128"
    id="svg2">
   <defs
      id="defs4">
@@ -132,10 +132,10 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-1020.3622)"
+     transform="translate(0,-924.3622)"
      id="layer1">
     <g
-       transform="matrix(2,0,0,2,0,-1052.3622)"
+       transform="matrix(8,0,0,8,0,-7366.5352)"
        id="g3035">
       <path
          d="m 15.25,8.5 a 7.75,7.75 0 1 1 -15.5,0 7.75,7.75 0 1 1 15.5,0 z"

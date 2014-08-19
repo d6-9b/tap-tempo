@@ -91,6 +91,41 @@
        id="linearGradient4518"
        xlink:href="#linearGradient4641"
        gradientUnits="userSpaceOnUse" />
+    <filter
+       x="-0.38399997"
+       y="-0.38400003"
+       width="1.768"
+       height="1.768"
+       color-interpolation-filters="sRGB"
+       id="filter4052">
+      <feGaussianBlur
+         id="feGaussianBlur4054"
+         stdDeviation="0.384" />
+    </filter>
+    <linearGradient
+       x1="11.5"
+       y1="16.5"
+       x2="11.5"
+       y2="0.5"
+       id="linearGradient3021"
+       xlink:href="#linearGradient3885"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="10.5"
+       y1="16.5"
+       x2="10.5"
+       y2="0.5"
+       id="linearGradient3023"
+       xlink:href="#linearGradient3877"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="14"
+       y1="16"
+       x2="14"
+       y2="-3"
+       id="linearGradient3025"
+       xlink:href="#linearGradient4641"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata7">
@@ -108,33 +143,52 @@
      transform="translate(0,-1036.3622)"
      id="layer1">
     <g
-       id="g3779">
+       id="g3035">
       <path
          d="m 15.25,8.5 a 7.75,7.75 0 1 1 -15.5,0 7.75,7.75 0 1 1 15.5,0 z"
          transform="translate(0.5,1035.8622)"
          id="path3757"
-         style="fill:url(#linearGradient3891);fill-opacity:1;stroke:none" />
+         style="fill:url(#linearGradient3021);fill-opacity:1;stroke:none" />
       <path
          d="m 15,8.5 a 7.5,7.5 0 1 1 -15,0 7.5,7.5 0 1 1 15,0 z"
          transform="translate(0.5,1035.8622)"
          id="path2987"
-         style="fill:none;stroke:url(#linearGradient3883);stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:0.497992;stroke-dasharray:none" />
+         style="fill:none;stroke:url(#linearGradient3023);stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:0.497992;stroke-dasharray:none" />
       <path
          d="m 19,6.5 a 9.5,9.5 0 1 1 -19,0 9.5,9.5 0 1 1 19,0 z"
          inkscape:connector-curvature="0"
          transform="translate(6,1042.3622)"
          clip-path="url(#clipPath4657)"
          id="path3235"
-         style="fill:url(#linearGradient4518);fill-opacity:1;stroke:none" />
+         style="fill:url(#linearGradient3025);fill-opacity:1;stroke:none" />
       <rect
          width="16"
          height="16"
          ry="0"
          x="0"
-         y="0"
-         transform="translate(0,1036.3622)"
+         y="1036.3622"
          id="rect3009"
          style="fill:none;stroke:none" />
+      <path
+         d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+         transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
+         id="path4034"
+         style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter4052)" />
+      <path
+         d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+         transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
+         id="path3075"
+         style="fill:#ff0000;fill-opacity:1;stroke:none" />
+      <text
+         x="2.4285965"
+         y="1048.6699"
+         id="text3866"
+         xml:space="preserve"
+         style="font-size:6px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0.16px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Monospace Bold"><tspan
+           x="2.4285965"
+           y="1048.6699"
+           id="tspan3868"
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16px;fill:#ffffff;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">TAP</tspan></text>
     </g>
   </g>
 </svg>
