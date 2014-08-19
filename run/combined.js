@@ -417,6 +417,18 @@ function TextNode (text) {
 }
 ;
 (function () {
+
+    var classPrefix = 'Main'
+
+    var loadingElement = Div(classPrefix + '-loading')
+    loadingElement.appendChild(TextNode('LOADING'))
+
+    var alignerElement = Div(classPrefix + '-aligner')
+
+    var body = document.body
+    body.appendChild(loadingElement)
+    body.appendChild(alignerElement)
+
     var request = new XMLHttpRequest
     request.open('get', 'pulse.ogg')
     request.responseType = 'arraybuffer'
@@ -435,7 +447,10 @@ function TextNode (text) {
                 audioBufferSource.connect(audioContext.destination)
                 audioBufferSource.start()
             })
-            document.body.appendChild(mainPanel.element)
+
+            body.removeChild(loadingElement)
+            body.removeChild(alignerElement)
+            body.appendChild(mainPanel.element)
 
             var resize = mainPanel.resize
             addEventListener('resize', resize)
@@ -444,6 +459,7 @@ function TextNode (text) {
         })
 
     }
+
 })()
 ;
 

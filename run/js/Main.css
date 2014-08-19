@@ -15,4 +15,19 @@ html, body {
     color: #fff;
     text-align: center;
     overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.Main-aligner {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.Main-loading {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    font-size: 18px;
 }
