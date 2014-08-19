@@ -229,16 +229,38 @@ function MainPanel (playPulse) {
     buttonsElement.appendChild(blink.element)
     buttonsElement.appendChild(muteButton.element)
 
+    var centerElement = Div(classPrefix + '-center')
+    centerElement.appendChild(bpmField.element)
+    centerElement.appendChild(intervalField.element)
+    centerElement.appendChild(buttonsElement)
+    centerElement.appendChild(tapButton.element)
+
     var element = Div(classPrefix)
-    element.appendChild(bpmField.element)
-    element.appendChild(intervalField.element)
-    element.appendChild(buttonsElement)
-    element.appendChild(tapButton.element)
+    element.appendChild(centerElement)
 
     updateBpm()
     tick()
 
-    return { element: element }
+    return {
+        element: element,
+        resize: function () {
+
+            var scale,
+                width = innerWidth,
+                height = innerHeight
+
+            if (width < height) {
+                scale = width / 320
+                if (scale * 480 > height) scale = height / 480
+            } else {
+                scale = width / 480
+                if (scale * 320 > height) scale = height / 320
+            }
+
+            element.style.transform = 'scale(' + scale +  ')'
+
+        },
+    }
 
 }
 ;
@@ -399,6 +421,7 @@ function TextNode (text) {
 
         var audioContext = new AudioContext
         audioContext.decodeAudioData(request.response, function (audioBuffer) {
+
             var mainPanel = MainPanel(function () {
                 if (audioBufferSource) audioBufferSource.stop()
                 audioBufferSource = audioContext.createBufferSource()
@@ -407,6 +430,11 @@ function TextNode (text) {
                 audioBufferSource.start()
             })
             document.body.appendChild(mainPanel.element)
+
+            var resize = mainPanel.resize
+            addEventListener('resize', resize)
+            resize()
+
         })
 
     }
