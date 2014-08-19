@@ -1,5 +1,6 @@
 .Field {
     position: absolute;
+    margin: auto;
 }
 
 .Field-label {

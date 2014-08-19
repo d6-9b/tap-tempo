@@ -9,21 +9,60 @@
     margin: auto;
 }
 
-.MainPanel-bpmField {
-    top: 20px;
-    right: 0;
-    left: 0;
-}
-
-.MainPanel-intervalField {
-    top: 110px;
-    right: 0;
-    left: 0;
-}
-
 .MainPanel-buttons {
     position: absolute;
-    top: 200px;
-    right: 0;
-    left: 0;
+}
+
+@media (orientation:portrait) {
+
+    .MainPanel {
+        width: 320px;
+        height: 480px;
+    }
+
+    .MainPanel-bpmField {
+        top: 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .MainPanel-intervalField {
+        top: 100px;
+        right: 0;
+        left: 0;
+    }
+
+    .MainPanel-buttons {
+        top: 195px;
+        right: 0;
+        left: 0;
+    }
+
+}
+
+@media (orientation:landscape) {
+
+    .MainPanel {
+        width: 480px;
+        height: 320px;
+    }
+
+    .MainPanel-bpmField {
+        top: 45px;
+        width: 280px;
+        left: 0;
+    }
+
+    .MainPanel-intervalField {
+        top: 135px;
+        width: 280px;
+        left: 0;
+    }
+
+    .MainPanel-buttons {
+        top: 235px;
+        width: 280px;
+        left: 0;
+    }
+
 }

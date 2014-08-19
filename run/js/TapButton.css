@@ -1,16 +1,31 @@
 .TapButton {
     position: absolute;
-    top: 260px;
-    right: 0;
-    left: 0;
     margin: auto;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
     border-radius: 50%;
     background: #444;
     font-size: 42px;
 }
 .TapButton.active {
     background: #999;
+}
+
+@media (orientation:portrait) {
+    .TapButton {
+        top: 265px;
+        right: 0;
+        left: 0;
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
+    }
+}
+@media (orientation:landscape) {
+    .TapButton {
+        top: 20px;
+        left: 280px;
+        bottom: 20px;
+        width: 160px;
+        height: 160px;
+        line-height: 160px;
+    }
 }
