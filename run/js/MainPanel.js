@@ -100,6 +100,8 @@ function MainPanel (playPulse) {
             }
 
             element.style.transform = 'scale(' + scale +  ')'
+            bpmField.setScale(scale)
+            intervalField.setScale(scale)
 
         },
     }

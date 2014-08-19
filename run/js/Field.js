@@ -13,7 +13,7 @@ function Field (label, changeListener) {
 
     function repeatChange () {
         var rect = valueElement.getBoundingClientRect(),
-            width = valueElement.offsetWidth,
+            width = valueElement.offsetWidth * scale,
             x = pointer.clientX - rect.left - width / 2
         value += x * 0.001
         updateValue()
@@ -113,12 +113,16 @@ function Field (label, changeListener) {
 
     var value, pointer, interval,
         touched = false,
-        identifier = null
+        identifier = null,
+        scale = 1
 
     return {
         element: element,
         addClass: function (className) {
             element.classList.add(className)
+        },
+        setScale: function (_scale) {
+            scale = _scale
         },
         setValue: function (_value) {
             value = _value
