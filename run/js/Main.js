@@ -9,6 +9,7 @@
 
         var audioContext = new AudioContext
         audioContext.decodeAudioData(request.response, function (audioBuffer) {
+
             var mainPanel = MainPanel(function () {
                 if (audioBufferSource) audioBufferSource.stop()
                 audioBufferSource = audioContext.createBufferSource()
@@ -17,6 +18,11 @@
                 audioBufferSource.start()
             })
             document.body.appendChild(mainPanel.element)
+
+            var resize = mainPanel.resize
+            addEventListener('resize', resize)
+            resize()
+
         })
 
     }

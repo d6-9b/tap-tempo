@@ -80,6 +80,25 @@ function MainPanel (playPulse) {
     updateBpm()
     tick()
 
-    return { element: element }
+    return {
+        element: element,
+        resize: function () {
+
+            var scale,
+                width = innerWidth,
+                height = innerHeight
+
+            if (width < height) {
+                scale = width / 320
+                if (scale * 480 > height) scale = height / 480
+            } else {
+                scale = width / 480
+                if (scale * 320 > height) scale = height / 320
+            }
+
+            element.style.transform = 'scale(' + scale +  ')'
+
+        },
+    }
 
 }
