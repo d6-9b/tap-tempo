@@ -16,6 +16,17 @@
   <defs
      id="defs4">
     <linearGradient
+       id="linearGradient3858">
+      <stop
+         id="stop3860"
+         style="stop-color:#ff4444;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3862"
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient3885">
       <stop
          id="stop3887"
@@ -37,6 +48,22 @@
          style="stop-color:#ffffff;stop-opacity:0"
          offset="1" />
     </linearGradient>
+    <linearGradient
+       x1="10.5"
+       y1="16.5"
+       x2="10.5"
+       y2="0.5"
+       id="linearGradient3883"
+       xlink:href="#linearGradient3877"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="11.5"
+       y1="16.5"
+       x2="11.5"
+       y2="0.5"
+       id="linearGradient3891"
+       xlink:href="#linearGradient3885"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        x1="14"
        y1="16"
@@ -110,12 +137,32 @@
        id="linearGradient3025"
        xlink:href="#linearGradient4641"
        gradientUnits="userSpaceOnUse" />
+    <filter
+       x="-0.55199999"
+       y="-0.55200005"
+       width="2.1039999"
+       height="2.1040001"
+       color-interpolation-filters="sRGB"
+       id="filter3854">
+      <feGaussianBlur
+         id="feGaussianBlur3856"
+         stdDeviation="0.55199999" />
+    </filter>
+    <radialGradient
+       cx="4.5"
+       cy="4.5"
+       r="1.2"
+       fx="4.5"
+       fy="4.5"
+       id="radialGradient3864"
+       xlink:href="#linearGradient3858"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        x1="14"
        y1="16"
        x2="14"
        y2="-3"
-       id="linearGradient3098"
+       id="linearGradient3930"
        xlink:href="#linearGradient4641"
        gradientUnits="userSpaceOnUse" />
   </defs>
@@ -135,53 +182,61 @@
      transform="translate(0,-796.3622)"
      id="layer1">
     <g
-       transform="matrix(16,0,0,16,0,-15785.433)"
        id="g3035">
-      <path
-         d="m 15.25,8.5 a 7.75,7.75 0 1 1 -15.5,0 7.75,7.75 0 1 1 15.5,0 z"
-         transform="translate(0.5,1035.8622)"
-         id="path3757"
-         style="fill:url(#linearGradient3021);fill-opacity:1;stroke:none" />
-      <path
-         d="m 15,8.5 a 7.5,7.5 0 1 1 -15,0 7.5,7.5 0 1 1 15,0 z"
-         transform="translate(0.5,1035.8622)"
-         id="path2987"
-         style="fill:none;stroke:url(#linearGradient3023);stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:0.497992;stroke-dasharray:none" />
-      <path
-         d="m 19,6.5 a 9.5,9.5 0 1 1 -19,0 9.5,9.5 0 1 1 19,0 z"
-         inkscape:connector-curvature="0"
-         transform="translate(6,1042.3622)"
-         clip-path="url(#clipPath4657)"
-         id="path3235"
-         style="fill:url(#linearGradient3098);fill-opacity:1;stroke:none" />
-      <rect
-         width="16"
-         height="16"
-         ry="0"
-         x="0"
-         y="1036.3622"
-         id="rect3009"
-         style="fill:none;stroke:none" />
-      <path
-         d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
-         transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
-         id="path4034"
-         style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter4052)" />
-      <path
-         d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
-         transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
-         id="path3075"
-         style="fill:#ff0000;fill-opacity:1;stroke:none" />
-      <text
-         x="2.4285965"
-         y="1048.6699"
-         id="text3866"
-         xml:space="preserve"
-         style="font-size:6px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0.16px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Monospace Bold"><tspan
+      <g
+         transform="matrix(16,0,0,16,0,-15785.433)"
+         id="g3866">
+        <path
+           d="m 15.25,8.5 a 7.75,7.75 0 1 1 -15.5,0 7.75,7.75 0 1 1 15.5,0 z"
+           transform="translate(0.5,1035.8622)"
+           id="path3757"
+           style="fill:url(#linearGradient3021);fill-opacity:1;stroke:none" />
+        <path
+           d="m 15,8.5 a 7.5,7.5 0 1 1 -15,0 7.5,7.5 0 1 1 15,0 z"
+           transform="translate(0.5,1035.8622)"
+           id="path2987"
+           style="fill:none;stroke:url(#linearGradient3023);stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:0.497992;stroke-dasharray:none" />
+        <path
+           d="m 19,6.5 a 9.5,9.5 0 1 1 -19,0 9.5,9.5 0 1 1 19,0 z"
+           inkscape:connector-curvature="0"
+           transform="translate(6,1042.3622)"
+           clip-path="url(#clipPath4657)"
+           id="path3235"
+           style="fill:url(#linearGradient3930);fill-opacity:1;stroke:none" />
+        <path
+           d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+           transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
+           id="path3780"
+           style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter3854)" />
+        <rect
+           width="16"
+           height="16"
+           ry="0"
+           x="0"
+           y="1036.3622"
+           id="rect3009"
+           style="fill:none;stroke:none" />
+        <path
+           d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+           transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
+           id="path4034"
+           style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter4052)" />
+        <path
+           d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+           transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
+           id="path3075"
+           style="fill:url(#radialGradient3864);fill-opacity:1;stroke:none" />
+        <text
            x="2.4285965"
            y="1048.6699"
-           id="tspan3868"
-           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16px;fill:#ffffff;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">TAP</tspan></text>
+           id="text3866"
+           xml:space="preserve"
+           style="font-size:6px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0.16px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Monospace Bold"><tspan
+             x="2.4285965"
+             y="1048.6699"
+             id="tspan3868"
+             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16px;fill:#ffffff;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">TAP</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
