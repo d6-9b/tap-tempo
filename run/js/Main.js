@@ -53,7 +53,16 @@
         }
 
     } else {
-        mainPanel = MainPanel()
+        var audios = []
+        mainPanel = MainPanel(function () {
+            if (!audios.length) audios.push(new Audio('pulse.ogg'))
+            var audio = audios.shift()
+            audio.play()
+            audio.addEventListener('ended', function ended () {
+                audio.removeEventListener('ended', ended)
+                audios.push(audio)
+            })
+        })
         body.appendChild(mainPanel.element)
         initResize()
     }
