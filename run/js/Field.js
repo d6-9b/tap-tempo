@@ -14,7 +14,7 @@ function Field (label, changeListener) {
     function repeatChange () {
         var rect = valueElement.getBoundingClientRect(),
             width = valueElement.offsetWidth * scale,
-            x = pointer.clientX - rect.left - width / 2
+            x = (pointer.clientX - rect.left - width / 2) * 2
         value += x * 0.001
         updateValue()
         changeListener(value)

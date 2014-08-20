@@ -8,6 +8,6 @@
     border-radius: 50%;
 }
 .Blink.light {
-    background: #f00;
-    box-shadow: 1px 0px 15px #f00, 1px 0px 30px #f00;
+    background: #f44;
+    box-shadow: 1px 0px 15px #f00, 1px 0px 30px #f00, 1px 0px 20px #f00 inset;
 }
