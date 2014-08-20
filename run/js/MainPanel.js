@@ -3,7 +3,7 @@ function MainPanel (playPulse) {
     function tick () {
         blink.tick()
         tickTimeout = setTimeout(tick, averageInterval)
-        if (!muteButton.muted) playPulse()
+        if (playPulse && !muteButton.muted) playPulse()
     }
 
     function updateBpm () {
@@ -65,11 +65,13 @@ function MainPanel (playPulse) {
         lastTime = now
     })
 
-    var muteButton = MuteButton()
-
     var buttonsElement = Div(classPrefix + '-buttons')
     buttonsElement.appendChild(blink.element)
-    buttonsElement.appendChild(muteButton.element)
+
+    if (playPulse) {
+        var muteButton = MuteButton()
+        buttonsElement.appendChild(muteButton.element)
+    }
 
     var centerElement = Div(classPrefix + '-center')
     centerElement.appendChild(bpmField.element)
