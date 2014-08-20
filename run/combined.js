@@ -165,7 +165,7 @@ function MainPanel (playPulse) {
     function tick () {
         blink.tick()
         tickTimeout = setTimeout(tick, averageInterval)
-        if (playPulse && !muteButton.muted) playPulse()
+        if (!muteButton.muted) playPulse()
     }
 
     function updateBpm () {
@@ -227,13 +227,11 @@ function MainPanel (playPulse) {
         lastTime = now
     })
 
+    var muteButton = MuteButton()
+
     var buttonsElement = Div(classPrefix + '-buttons')
     buttonsElement.appendChild(blink.element)
-
-    if (playPulse) {
-        var muteButton = MuteButton()
-        buttonsElement.appendChild(muteButton.element)
-    }
+    buttonsElement.appendChild(muteButton.element)
 
     var centerElement = Div(classPrefix + '-center')
     centerElement.appendChild(bpmField.element)
@@ -473,7 +471,16 @@ function TextNode (text) {
         }
 
     } else {
-        mainPanel = MainPanel()
+        var audios = []
+        mainPanel = MainPanel(function () {
+            if (!audios.length) audios.push(new Audio('pulse.ogg'))
+            var audio = audios.shift()
+            audio.play()
+            audio.addEventListener('ended', function ended () {
+                audio.removeEventListener('ended', ended)
+                audios.push(audio)
+            })
+        })
         body.appendChild(mainPanel.element)
         initResize()
     }
