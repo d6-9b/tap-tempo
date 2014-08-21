@@ -20,7 +20,7 @@ function Blink () {
 
 }
 ;
-function Field (label, changeListener) {
+function Field (minValue, maxValue, label, changeListener) {
 
     function beginPointer (_pointer) {
         pointer = _pointer
@@ -38,6 +38,7 @@ function Field (label, changeListener) {
             width = valueElement.offsetWidth * scale,
             x = (pointer.clientX - rect.left - width / 2) * 2
         value += x * 0.001
+        value = Math.max(minValue, Math.min(maxValue, value))
         updateValue()
         changeListener(value)
     }
@@ -180,13 +181,18 @@ function MainPanel (playPulse) {
 
     var averageInterval = 500
 
-    var bpmField = Field('BPM', function (bpm) {
+    var minBpm = 1,
+        maxBpm = 240,
+        minInterval = 60000 / maxBpm,
+        maxInterval = 60000 / minBpm
+
+    var bpmField = Field(minBpm, maxBpm, 'BPM', function (bpm) {
         averageInterval = 60000 / bpm
         updateInterval()
     })
     bpmField.addClass(classPrefix + '-bpmField')
 
-    var intervalField = Field('MS', function (interval) {
+    var intervalField = Field(minInterval, maxInterval, 'MS', function (interval) {
         averageInterval = interval
         updateBpm()
     })
@@ -210,6 +216,7 @@ function MainPanel (playPulse) {
                 return a + b
             })
             averageInterval = sum / intervals.length
+            averageInterval = Math.max(minInterval, Math.min(maxInterval, averageInterval))
 
             updateBpm()
             updateInterval()
