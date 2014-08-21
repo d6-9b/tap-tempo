@@ -18,13 +18,18 @@ function MainPanel (playPulse) {
 
     var averageInterval = 500
 
-    var bpmField = Field('BPM', function (bpm) {
+    var minBpm = 1,
+        maxBpm = 240,
+        minInterval = 60000 / maxBpm,
+        maxInterval = 60000 / minBpm
+
+    var bpmField = Field(minBpm, maxBpm, 'BPM', function (bpm) {
         averageInterval = 60000 / bpm
         updateInterval()
     })
     bpmField.addClass(classPrefix + '-bpmField')
 
-    var intervalField = Field('MS', function (interval) {
+    var intervalField = Field(minInterval, maxInterval, 'MS', function (interval) {
         averageInterval = interval
         updateBpm()
     })
@@ -48,6 +53,7 @@ function MainPanel (playPulse) {
                 return a + b
             })
             averageInterval = sum / intervals.length
+            averageInterval = Math.max(minInterval, Math.min(maxInterval, averageInterval))
 
             updateBpm()
             updateInterval()

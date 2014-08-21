@@ -1,4 +1,4 @@
-function Field (label, changeListener) {
+function Field (minValue, maxValue, label, changeListener) {
 
     function beginPointer (_pointer) {
         pointer = _pointer
@@ -16,6 +16,7 @@ function Field (label, changeListener) {
             width = valueElement.offsetWidth * scale,
             x = (pointer.clientX - rect.left - width / 2) * 2
         value += x * 0.001
+        value = Math.max(minValue, Math.min(maxValue, value))
         updateValue()
         changeListener(value)
     }
