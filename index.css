@@ -46,6 +46,8 @@ a {
 }
 
 .button {
+    display: inline-block;
+    vertical-align: top;
     color: #333;
     text-decoration: none;
     margin-top: 32px;
@@ -55,8 +57,13 @@ a {
     border-radius: 4px;
     background-color: #ccc;
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    border: 2px solid #bbb;
+}
+.button:focus {
+    border-color: #26c;
 }
 .button:active {
+    border-color: #555;
     background-color: #777;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) inset;
