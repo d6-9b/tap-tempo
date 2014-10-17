@@ -52,32 +52,6 @@
          id="stop3881" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3877"
-       id="linearGradient3883"
-       x1="10.5"
-       y1="16.5"
-       x2="10.5"
-       y2="0.5"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3885"
-       id="linearGradient3891"
-       x1="11.5"
-       y1="16.5"
-       x2="11.5"
-       y2="0.5"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       x1="14"
-       y1="16"
-       x2="14"
-       y2="-3"
-       id="linearGradient4647"
-       xlink:href="#linearGradient4641"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        id="linearGradient4641">
       <stop
          id="stop4643"
@@ -99,15 +73,6 @@
          id="rect4659"
          style="fill:#c73fbf;fill-opacity:0.49397595;stroke:none" />
     </clipPath>
-    <linearGradient
-       y2="-3"
-       x2="14"
-       y1="16"
-       x1="14"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient4518"
-       xlink:href="#linearGradient4641"
-       inkscape:collect="always" />
     <filter
        inkscape:collect="always"
        id="filter4052"
@@ -139,15 +104,6 @@
        y1="16.5"
        x2="10.5"
        y2="0.5" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4641"
-       id="linearGradient3025"
-       gradientUnits="userSpaceOnUse"
-       x1="14"
-       y1="16"
-       x2="14"
-       y2="-3" />
     <filter
        inkscape:collect="always"
        id="filter3854"
@@ -218,7 +174,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

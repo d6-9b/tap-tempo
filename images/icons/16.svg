@@ -49,30 +49,6 @@
          offset="1" />
     </linearGradient>
     <linearGradient
-       x1="10.5"
-       y1="16.5"
-       x2="10.5"
-       y2="0.5"
-       id="linearGradient3883"
-       xlink:href="#linearGradient3877"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       x1="11.5"
-       y1="16.5"
-       x2="11.5"
-       y2="0.5"
-       id="linearGradient3891"
-       xlink:href="#linearGradient3885"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       x1="14"
-       y1="16"
-       x2="14"
-       y2="-3"
-       id="linearGradient4647"
-       xlink:href="#linearGradient4641"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        id="linearGradient4641">
       <stop
          id="stop4643"
@@ -94,14 +70,6 @@
          id="rect4659"
          style="fill:#c73fbf;fill-opacity:0.49397595;stroke:none" />
     </clipPath>
-    <linearGradient
-       x1="14"
-       y1="16"
-       x2="14"
-       y2="-3"
-       id="linearGradient4518"
-       xlink:href="#linearGradient4641"
-       gradientUnits="userSpaceOnUse" />
     <filter
        x="-0.38399997"
        y="-0.38400003"
