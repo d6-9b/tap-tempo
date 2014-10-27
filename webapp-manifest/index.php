@@ -16,6 +16,7 @@ echo json_encode([
     'icons' => [
         '16' => '/images/icons/16.png',
         '32' => '/images/icons/32.png',
+        '64' => '/images/icons/64.png',
         '90' => '/images/icons/90.png',
         '120' => '/images/icons/120.png',
         '128' => '/images/icons/128.png',
