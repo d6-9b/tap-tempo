@@ -7,6 +7,16 @@
         resize()
     }
 
+    ;(function () {
+        var style = document.createElement('style')
+        style.innerHTML =
+            '@font-face {' +
+                'font-family: FreeMono;' +
+                'src: url(fonts/FreeMono.ttf);' +
+            '}'
+        document.head.appendChild(style)
+    })()
+
     var body = document.body
 
     var mainPanel

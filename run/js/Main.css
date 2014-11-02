@@ -10,7 +10,7 @@
 }
 
 html, body {
-    font: normal 15px/20px monospace;
+    font: normal 15px/20px FreeMono, monospace;
     background: #000;
     color: #fff;
     text-align: center;
