@@ -8,7 +8,7 @@ $revisions = get_run_revisions();
 echo
     "CACHE MANIFEST\n"
     ."# v1\n"
-    ."fonts/FreeMono.ttf\n"
+    ."../fonts/FreeMono.ttf\n"
     .'../compressed.css?'.$revisions['compressed.css']."\n"
     .'../compressed.js?'.$revisions['compressed.js']."\n"
     ."../pulse.ogg\n";
