@@ -438,7 +438,7 @@ function TextNode (text) {
             '@font-face {' +
                 'font-family: FreeMono;' +
                 'src: url(fonts/FreeMono.ttf);' +
-                'src: local("FreeMono") url(fonts/FreeMono.ttf);' +
+                'src: local("FreeMono"), url(fonts/FreeMono.ttf);' +
             '}'
         document.head.appendChild(style)
     })()
