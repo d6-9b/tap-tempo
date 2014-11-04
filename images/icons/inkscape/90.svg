@@ -104,6 +104,15 @@
        y1="16.5"
        x2="10.5"
        y2="0.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4641"
+       id="linearGradient3025"
+       gradientUnits="userSpaceOnUse"
+       x1="14"
+       y1="16"
+       x2="14"
+       y2="-3" />
     <filter
        inkscape:collect="always"
        id="filter3854"
@@ -127,15 +136,6 @@
        fy="4.5"
        r="1.2"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4641"
-       id="linearGradient3930"
-       gradientUnits="userSpaceOnUse"
-       x1="14"
-       y1="16"
-       x2="14"
-       y2="-3" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -144,12 +144,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="45.548793"
-     inkscape:cy="31.823703"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="16.715184"
+     inkscape:cy="-4.8001625"
      inkscape:document-units="px"
      inkscape:current-layer="g3035"
-     showgrid="true"
+     showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:window-width="1366"
      inkscape:window-height="707"
@@ -214,7 +214,7 @@
            transform="translate(6,1042.3622)"
            clip-path="url(#clipPath4657)"
            id="path3235"
-           style="fill:url(#linearGradient3930);fill-opacity:1;stroke:none" />
+           style="fill:url(#linearGradient3025);fill-opacity:1;stroke:none" />
         <path
            sodipodi:type="arc"
            style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter3854)"
@@ -255,17 +255,28 @@
            transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)" />
         <text
            xml:space="preserve"
-           style="font-size:6px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0.16px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Monospace Bold"
-           x="2.4285965"
-           y="1048.6699"
+           style="font-size:6.32346678px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0.16862577px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold"
+           x="2.2344148"
+           y="1048.37"
            id="text3866"
            sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan3868"
-             x="2.4285965"
-             y="1048.6699"
-             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16px;fill:#ffffff;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">TAP</tspan></text>
+             x="2.2344148"
+             y="1048.37"
+             style="font-size:6.32346678px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16862577px;fill:#ffffff;fill-opacity:1;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold">TAP</tspan></text>
       </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold"
+         x="-0.70710683"
+         y="11.403806"
+         id="text3249"
+         transform="translate(0,1036.3622)"><tspan
+           sodipodi:role="line"
+           id="tspan3251"
+           x="-0.70710683"
+           y="11.403806" /></text>
     </g>
   </g>
 </svg>

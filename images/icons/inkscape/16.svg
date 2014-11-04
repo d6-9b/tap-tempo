@@ -142,12 +142,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="-5.2787988"
-     inkscape:cy="-2.9384622"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="16.715184"
+     inkscape:cy="-4.8001625"
      inkscape:document-units="px"
      inkscape:current-layer="g3035"
-     showgrid="true"
+     showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:window-width="1366"
      inkscape:window-height="707"
@@ -193,7 +193,7 @@
            sodipodi:cy="8.5"
            sodipodi:rx="7.75"
            sodipodi:ry="7.75"
-           d="m 15.25,8.5 a 7.75,7.75 0 1 1 -15.5,0 7.75,7.75 0 1 1 15.5,0 z"
+           d="m 15.25,8.5 c 0,4.280207 -3.469793,7.75 -7.75,7.75 -4.2802068,0 -7.75,-3.469793 -7.75,-7.75 0,-4.2802068 3.4697932,-7.75 7.75,-7.75 4.280207,0 7.75,3.4697932 7.75,7.75 z"
            transform="translate(0.5,1035.8622)" />
         <path
            sodipodi:type="arc"
@@ -203,7 +203,7 @@
            sodipodi:cy="8.5"
            sodipodi:rx="7.5"
            sodipodi:ry="7.5"
-           d="m 15,8.5 a 7.5,7.5 0 1 1 -15,0 7.5,7.5 0 1 1 15,0 z"
+           d="M 15,8.5 C 15,12.642136 11.642136,16 7.5,16 3.3578644,16 0,12.642136 0,8.5 0,4.3578644 3.3578644,1 7.5,1 11.642136,1 15,4.3578644 15,8.5 z"
            transform="translate(0.5,1035.8622)" />
         <path
            inkscape:connector-curvature="0"
@@ -220,7 +220,7 @@
            sodipodi:cy="4.5"
            sodipodi:rx="1.2"
            sodipodi:ry="1.1999999"
-           d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+           d="M 5.7,4.5 C 5.7,5.1627417 5.1627417,5.6999999 4.5,5.6999999 3.8372583,5.6999999 3.3,5.1627417 3.3,4.5 3.3,3.8372583 3.8372583,3.3000001 4.5,3.3000001 c 0.6627417,0 1.2,0.5372582 1.2,1.1999999 z"
            transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)" />
         <rect
            style="fill:none;stroke:none"
@@ -232,7 +232,7 @@
            ry="0" />
         <path
            transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)"
-           d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+           d="M 5.7,4.5 C 5.7,5.1627417 5.1627417,5.6999999 4.5,5.6999999 3.8372583,5.6999999 3.3,5.1627417 3.3,4.5 3.3,3.8372583 3.8372583,3.3000001 4.5,3.3000001 c 0.6627417,0 1.2,0.5372582 1.2,1.1999999 z"
            sodipodi:ry="1.1999999"
            sodipodi:rx="1.2"
            sodipodi:cy="4.5"
@@ -248,21 +248,32 @@
            sodipodi:cy="4.5"
            sodipodi:rx="1.2"
            sodipodi:ry="1.1999999"
-           d="m 5.7,4.5 a 1.2,1.1999999 0 1 1 -2.4,0 1.2,1.1999999 0 1 1 2.4,0 z"
+           d="M 5.7,4.5 C 5.7,5.1627417 5.1627417,5.6999999 4.5,5.6999999 3.8372583,5.6999999 3.3,5.1627417 3.3,4.5 3.3,3.8372583 3.8372583,3.3000001 4.5,3.3000001 c 0.6627417,0 1.2,0.5372582 1.2,1.1999999 z"
            transform="matrix(1.3333333,0,0,1.3333333,2.0000002,1034.3622)" />
         <text
            xml:space="preserve"
-           style="font-size:6px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0.16px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Monospace Bold"
-           x="2.4285965"
-           y="1048.6699"
+           style="font-size:6.32346678px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0.16862577px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold"
+           x="2.2344148"
+           y="1048.37"
            id="text3866"
            sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan3868"
-             x="2.4285965"
-             y="1048.6699"
-             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16px;fill:#ffffff;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">TAP</tspan></text>
+             x="2.2344148"
+             y="1048.37"
+             style="font-size:6.32346678px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16862577px;fill:#ffffff;fill-opacity:1;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold">TAP</tspan></text>
       </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold"
+         x="-0.70710683"
+         y="11.403806"
+         id="text3249"
+         transform="translate(0,1036.3622)"><tspan
+           sodipodi:role="line"
+           id="tspan3251"
+           x="-0.70710683"
+           y="11.403806" /></text>
     </g>
   </g>
 </svg>

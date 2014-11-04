@@ -186,16 +186,26 @@
            id="path3075"
            style="fill:url(#radialGradient3864);fill-opacity:1;stroke:none" />
         <text
-           x="2.4285965"
-           y="1048.6699"
+           x="2.2344148"
+           y="1048.37"
            id="text3866"
            xml:space="preserve"
-           style="font-size:6px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0.16px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Monospace Bold"><tspan
-             x="2.4285965"
-             y="1048.6699"
+           style="font-size:6.32346678px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0.16862577px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold"><tspan
+             x="2.2344148"
+             y="1048.37"
              id="tspan3868"
-             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16px;fill:#ffffff;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">TAP</tspan></text>
+             style="font-size:6.32346678px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.16862577px;fill:#ffffff;fill-opacity:1;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold">TAP</tspan></text>
       </g>
+      <text
+         x="-0.70710683"
+         y="11.403806"
+         transform="translate(0,1036.3622)"
+         id="text3249"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:FreeMono;-inkscape-font-specification:FreeMono Bold"><tspan
+           x="-0.70710683"
+           y="11.403806"
+           id="tspan3251" /></text>
     </g>
   </g>
 </svg>
