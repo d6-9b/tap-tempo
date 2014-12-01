@@ -9,7 +9,7 @@
     background: #999;
 }
 
-@media (orientation:portrait) {
+@media (orientation: portrait) {
     .TapButton {
         top: 265px;
         right: 0;
@@ -19,7 +19,7 @@
         line-height: 180px;
     }
 }
-@media (orientation:landscape) {
+@media (orientation: landscape) {
     .TapButton {
         top: 20px;
         left: 280px;

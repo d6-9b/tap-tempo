@@ -17,7 +17,7 @@
     position: absolute;
 }
 
-@media (orientation:portrait) {
+@media (orientation: portrait) {
 
     .MainPanel-center {
         width: 320px;
@@ -46,7 +46,7 @@
 
 }
 
-@media (orientation:landscape) {
+@media (orientation: landscape) {
 
     .MainPanel-center {
         width: 480px;
