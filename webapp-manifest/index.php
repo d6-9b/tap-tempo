@@ -24,5 +24,6 @@ echo json_encode([
         '120' => '/images/icons/120.png?1',
         '128' => '/images/icons/128.png?'.$revisions['images/icons/128.png'],
         '256' => '/images/icons/256.png?1',
+        '512' => '/images/icons/512.png',
     ],
 ]);
